@@ -1,44 +1,88 @@
-.body {
-  font-family: Arial, sans-serif;
-  background-color: #222;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-}
-
-.contact-info-container {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  text-align: center;
-}
-
-h1 {
-  margin-bottom: 20px;
-}
-
-.contact-item {
-  margin-bottom: 15px;
-}
-
-.contact-item h2 {
-  margin: 0;
-  font-size: 18px;
-}
-
-.contact-item p {
-  margin: 5px 0 0;
-}
-
-.contact-item a {
-  color: #007bff;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
 
-.contact-item a:hover {
-  text-decoration: underline;
+body {
+  overflow-x: hidden;
+  background-color: #222;
+  color: #e5e5e5;
+}
+
+.contact-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.contact-form {
+  background-color: #333;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-form h2 {
+  color: #007ced;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin: 15px 0 5px;
+  color: #e5e5e5;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: #444;
+  border: 1px solid #555;
+  color: #e5e5e5;
+  border-radius: 5px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #007ced;
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007ced;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #005cbf;
+}
+
+nav .navlinks {
+  list-style-type: none;
+}
+
+nav .navlinks li {
+  display: inline-block;
+}
+
+nav .navlinks li a {
+  color: #e5e5e5;
+  margin-right: 2.5rem;
 }
